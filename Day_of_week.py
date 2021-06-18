@@ -9,6 +9,9 @@ def process_date(user_input):
     user_input=re.sub(r"-", " ", user_input) #substitute - with space 
     return user_input
 
+def hello_world():
+    print("Hello Wold")
+
 def find_day(date):
     born = datetime.datetime.strptime(date, '%d %m %Y').weekday() #this statement returns an integer corresponding to the day of the week
     return (calendar.day_name[born]) #this statement returns the corresponding day name to the integer generated in the previous statement
